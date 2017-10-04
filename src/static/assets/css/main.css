@@ -1,0 +1,62 @@
+::-moz-selection { /* Code for Firefox */
+  color: #FFF;
+  background: #555;
+}
+
+::selection {
+  color: #FFF;
+  background: #555;
+}
+html{
+  background-color: #333;
+}
+a, a:hover{
+  text-decoration: none;
+}
+
+img.aligncenter{
+  margin:10px auto 10px auto;
+  margin-bottom:10px!important;
+  display:block;
+}
+img.alignleft{
+  float:left;
+  margin:10px 10px 10px 0;
+  margin-bottom:10px!important;
+}
+img.alignright{
+  float:right;
+  margin:10px 0 10px 10px;
+  margin-bottom:10px!important;
+}
+
+.masterContent{
+  padding-top:80px;
+  min-height: 300px;
+}
+
+.form-error{
+  color: #da5615 !important;  
+  font-size: 12px;
+}
+.input-group 
+.form-error{
+  position: absolute;
+  z-index: 10;
+  left: 5px;
+  bottom: -18px
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+.vcenter {
+  display: inline-block;
+  vertical-align: middle;
+  float: none;
+}
+div[class^="col-"] {
+  padding-top:10px;
+  padding-bottom:10px;
+}  

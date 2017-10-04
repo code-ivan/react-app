@@ -1,0 +1,20 @@
+{
+    "development":{
+        "baseApiUrl":"http://localhost:8181",
+        "apiSecretToken": "[GENERATE_SECRET_TOKEN]",
+        "apiToken": "[GENERATE_TOKEN]",
+        "gauid":"[GOOGLE ANALYTICS ID]"
+    },
+    "production":{
+        "baseApiUrl":"[API URL]",   
+        "gauid":"[GOOGLE ANALYTICS ID]",
+        "apiSecretToken": "[GENERATE_SECRET_TOKEN]",
+        "apiToken": "[GENERATE_TOKEN]"
+    },
+    "test":{
+        "baseApiUrl":"http://localhost:8181",
+        "gauid":"[GOOGLE ANALYTICS ID]",
+        "apiSecretToken": "[GENERATE_SECRET_TOKEN]",
+        "apiToken": "[GENERATE_TOKEN]"
+    }
+}

@@ -1,0 +1,141 @@
+.nav {
+    float: right;
+}
+
+.navList {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.navListItem {
+    display: inline-block;
+}
+
+.navLink {
+    display: block;
+    padding: 20px;
+    font-size: 14px;
+    color: #154859;
+    background-color: #FFF;
+    font-weight: 300;
+    text-decoration: none;
+    text-transform: uppercase;
+    &:focus,
+    &:hover {
+        text-decoration: none;
+        background-color: #e6ebed;
+        cursor: pointer;
+    }
+}
+
+.active {
+    background-color: #e6ebed;
+}
+
+.navFunding a {
+    background-color: #50b1b8;
+    color: #FFF;
+}
+
+.navFunding a.active,
+.navFunding a:hover,
+.navFunding a:focus {
+    background-color: #154859;
+}
+
+.submenu {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    left: 0;
+    background-color: #154859;
+    padding: 40px;
+    width: 100%;
+    transition: all 0.5s ease;
+    p {
+        color: #FFF
+    }
+    i {
+        color: #FFF
+    }
+}
+
+.submenu.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.submenu>div>li {
+    float: left;
+    margin: 0 20px;
+}
+
+.submenu>div>li>ul {
+    padding: 10px 0;
+}
+
+.submenu li {
+    color: #FFF;
+    font-size: 15px;
+    list-style: none;
+    padding: 0 0 10px;
+}
+
+.submenu li:last-child {
+    padding: 0;
+}
+
+.submenu li a {
+    color: #b3dae6;
+}
+
+.icon {
+    display: none;
+    position: absolute;
+    top: -47px;
+    right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+@media (max-width: 1085px) {
+    .icon {
+        display: block;
+    }
+    .nav {
+        position: relative;
+        width: 100%;
+    }
+    .navList {
+        display: none;
+        position: absolute;
+        z-index: 100;
+        top: 0;
+        right: 0;
+        border: 1px solid #f5f5f5;
+    }
+    .openMenu .navList {
+        display: block;
+    }
+    .navListItem {
+        display: list-item;
+    }
+    .submenu {
+        max-height: 300px;
+        overflow: auto;
+        padding: 20px;
+        right: 151px;
+        left: unset;
+        top: 0px;
+        width: 200px;
+    }
+    .submenu>div>li {
+        margin: 0;
+        float: none;
+    }
+    .submenu .container {
+        width: auto;
+        padding: 0;
+    }
+}

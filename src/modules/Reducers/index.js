@@ -1,0 +1,1 @@
+export navReducer from './navReducer'

@@ -1,0 +1,26 @@
+.title {
+  text-align: center;
+  width: 60%;
+  margin: 0 auto 40px;
+
+  &.fontColorWhite {
+    h2 {
+      color: #ffffff;
+    }
+  }
+}
+
+.title h2 {
+  color: #124252;
+  margin-bottom: 5px;
+  font-size: 1.9em;
+  font-weight: 600;
+}
+
+.title span {
+  color: #3d5058;
+  display: block;
+  max-width: 450px;
+  line-height: 1.8;
+  margin: auto;
+}
